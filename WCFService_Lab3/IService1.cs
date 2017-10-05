@@ -13,7 +13,7 @@ namespace WCFService_Lab3
     public interface IService1
     {
         [OperationContract]
-        [WebInvoke(RequestFormat =)]
-       
+        //   [WebInvoke(RequestFormat =)]
+        List<> Get();
     }
 }
