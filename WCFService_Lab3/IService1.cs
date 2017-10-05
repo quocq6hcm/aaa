@@ -12,8 +12,19 @@ namespace WCFService_Lab3
     [ServiceContract]
     public interface IService1
     {
-        [OperationContract]
         //   [WebInvoke(RequestFormat =)]
-        List<> Get();
+        [OperationContract]
+        List<Models.Store> GetStoreList();
+
+        [OperationContract]
+        Models.Store GetStore();
+
+        [OperationContract]
+        void PostStore(Models.Store s);
+
+        [OperationContract]
+        bool DeleteStore(int id);
+
+
     }
 }
